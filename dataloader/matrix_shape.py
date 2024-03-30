@@ -5,15 +5,15 @@ import re
 import random
 
 
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/autoform-gemini.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/autoform-gpt-3.5.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/autoform-gpt-4.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/cot-gemini.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/cot-gpt-3.5.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/cot-gpt-4.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-instance-gemini.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-instance-gpt-3.5.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-instance-gpt-4.py")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/autoform-gemini")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/autoform-gpt-3.5")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/autoform-gpt-4")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/cot-gemini")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/cot-gpt-3.5")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/cot-gpt-4")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-instance-gemini")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-instance-gpt-3.5")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-instance-gpt-4")
 class MatrixShapeLoader(DataLoader):
     def __init__(self, path: str):
         self.answer_pat = re.compile(r"#### (-?\d+)")
@@ -31,12 +31,12 @@ class MatrixShapeLoader(DataLoader):
                 )
 
 
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-task-gemini.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-task-gpt-3.5.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-task-gpt-3.5-gpt-4.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-task-gpt-4.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-task-gpt-4-gemini.py")
-@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-task-gpt-4-gpt-3.5.py")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-task-gemini")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-task-gpt-3.5")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-task-gpt-3.5-gpt-4")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-task-gpt-4")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-task-gpt-4-gemini")
+@dataloader_registry.register("tasksolving/evaluating_information_essentiality/twostep-task-gpt-4-gpt-3.5")
 class MatrixShapeManyTaskDescriptionLoader(DataLoader):
     def __init__(self, path: str):
         self.answer_pat = re.compile(r"#### (-?\d+)")

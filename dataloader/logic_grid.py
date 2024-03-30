@@ -6,15 +6,15 @@ import json
 import re
 
 
-@dataloader_registry.register("tasksolving/logic_grid/autoform-gemini.py")
-@dataloader_registry.register("tasksolving/logic_grid/autoform-gpt-3.5.py")
-@dataloader_registry.register("tasksolving/logic_grid/autoform-gpt-4.py")
-@dataloader_registry.register("tasksolving/logic_grid/cot-gemini.py")
-@dataloader_registry.register("tasksolving/logic_grid/cot-gpt-3.5.py")
-@dataloader_registry.register("tasksolving/logic_grid/cot-gpt-4.py")
-@dataloader_registry.register("tasksolving/logic_grid/twostep-instance-gemini.py")
-@dataloader_registry.register("tasksolving/logic_grid/twostep-instance-gpt-3.5.py")
-@dataloader_registry.register("tasksolving/logic_grid/twostep-instance-gpt-4.py")
+@dataloader_registry.register("tasksolving/logic_grid/autoform-gemini")
+@dataloader_registry.register("tasksolving/logic_grid/autoform-gpt-3.5")
+@dataloader_registry.register("tasksolving/logic_grid/autoform-gpt-4")
+@dataloader_registry.register("tasksolving/logic_grid/cot-gemini")
+@dataloader_registry.register("tasksolving/logic_grid/cot-gpt-3.5")
+@dataloader_registry.register("tasksolving/logic_grid/cot-gpt-4")
+@dataloader_registry.register("tasksolving/logic_grid/twostep-instance-gemini")
+@dataloader_registry.register("tasksolving/logic_grid/twostep-instance-gpt-3.5")
+@dataloader_registry.register("tasksolving/logic_grid/twostep-instance-gpt-4")
 class LogicGridLoader(DataLoader):
     def __init__(self, path: str):
         self.answer_pat = re.compile(r"#### (-?\d+)")
@@ -34,12 +34,12 @@ class LogicGridLoader(DataLoader):
                 )
 
 
-@dataloader_registry.register("tasksolving/logic_grid/twostep-task-gemini.py")
-@dataloader_registry.register("tasksolving/logic_grid/twostep-task-gpt-3.5.py")
-@dataloader_registry.register("tasksolving/logic_grid/twostep-task-gpt-3.5-gpt-4.py")
-@dataloader_registry.register("tasksolving/logic_grid/twostep-task-gpt-4.py")
-@dataloader_registry.register("tasksolving/logic_grid/twostep-task-gpt-4-gemini.py")
-@dataloader_registry.register("tasksolving/logic_grid/twostep-task-gpt-4-gpt-3.5.py")
+@dataloader_registry.register("tasksolving/logic_grid/twostep-task-gemini")
+@dataloader_registry.register("tasksolving/logic_grid/twostep-task-gpt-3.5")
+@dataloader_registry.register("tasksolving/logic_grid/twostep-task-gpt-3.5-gpt-4")
+@dataloader_registry.register("tasksolving/logic_grid/twostep-task-gpt-4")
+@dataloader_registry.register("tasksolving/logic_grid/twostep-task-gpt-4-gemini")
+@dataloader_registry.register("tasksolving/logic_grid/twostep-task-gpt-4-gpt-3.5")
 class LogicGridManyTaskDescriptionLoader(DataLoader):
     def __init__(self, path: str):
         self.answer_pat = re.compile(r"#### (-?\d+)")

@@ -40,7 +40,7 @@ prompts:
     ---
     
     RESPONSE GUIDELINES:
-    1. Initial State Representation: Begin by providing a clear and detailed representation of the initial state or conditions of the problem. It could be code, pseudocode, JSON, markdown table, logical operators, or math equation.
+    1. Initial State Representation: Begin by providing a clear and detailed representation of the initial state or conditions of the problem.
     2. Step-by-Step Solution Process: Progressively update the state representation as you work through each step of the solution. This should include all logical reasoning and calculations leading to the final answer.
     3. Concluding with the Answer: End your response with "Answer: {answer}", where {answer} is the final result of your problem-solving process.
 

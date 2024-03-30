@@ -40,7 +40,7 @@ prompts:
     ---
     
     RESPONSE GUIDELINES:
-    1. Initial State Representation: To enhance clarity and eliminate ambiguities inherent in natural language, consider employing more structured and concise forms. It could be code, pseudocode, JSON, markdown table, logical operators, or math equation. Begin by providing a generic representation form of the state or conditions of the problem.
+    1. Initial State Representation: To enhance clarity and eliminate ambiguities inherent in natural language, you must employ more structured and concise forms. It could be math equation, unordered list, ordered list, markdown table, or logical expression.
     2. Step-by-Step Solution Process: Progressively update the state representation as you work through each step of the solution. This should include all logical reasoning and calculations leading to the final answer.
     3. Concluding with the Answer: End your response with "Answer: {answer}", where {answer} is the final result of your problem-solving process. The {answer} should be a single capital letter.
 
