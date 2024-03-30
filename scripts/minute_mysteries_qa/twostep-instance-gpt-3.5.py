@@ -13,7 +13,7 @@ from dataloader import dataloader_registry
 
 parser = ArgumentParser()
 
-parser.add_argument("--task", type=str, default="tasksolving/minute_mysteries_qa/twostep-instance-gpt-3.5.py")
+parser.add_argument("--task", type=str, default="tasksolving/minute_mysteries_qa/twostep-instance-gpt-3.5")
 parser.add_argument(
     "--tasks_dir",
     type=str,

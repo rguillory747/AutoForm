@@ -40,7 +40,7 @@ prompts:
     ---
     
     RESPONSE GUIDELINES:
-    1. To enhance clarity and eliminate ambiguities inherent in natural language, consider employing more structured and concise forms of communication for your step-by-step solutions. Suitable formats include code, pseudocode, JSON, markdown tables, logical operators, or mathematical equations. 
+    1. To enhance clarity and eliminate ambiguities inherent in natural language, you must employ more structured and concise forms of communication for your step-by-step solutions. It could be math equation, unordered list, ordered list, markdown table, or logical expression.
     2. At the end of your response, you must give your answer in the form of "the answer is: {number}", where {number} is the answer number. Remember to be concise and accurate.
 
   critic_prepend_prompt: &critic_prepend_prompt |-

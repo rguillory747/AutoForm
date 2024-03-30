@@ -13,7 +13,7 @@ from dataloader import dataloader_registry
 
 parser = ArgumentParser()
 
-parser.add_argument("--task", type=str, default="tasksolving/minute_mysteries_qa/cot-gemini.py")
+parser.add_argument("--task", type=str, default="tasksolving/minute_mysteries_qa/cot-gemini")
 parser.add_argument(
     "--tasks_dir",
     type=str,

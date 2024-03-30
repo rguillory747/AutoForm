@@ -30,7 +30,7 @@ parser.add_argument(
 parser.add_argument(
     "--dataset_path",
     type=str,
-    default="data/evaluating_information_essentiality/task_all.jsonl",
+    default="data/evaluating_information_essentiality/task_all.json",
 )
 parser.add_argument("--output_path", type=str, default=None)
 parser.add_argument("--num_thread", type=int, default=1)
